@@ -1,0 +1,12 @@
+django_filters 
+1. let op imports in case of custom class for CharFilter
+2. it's only for one field or AND query
+
+GET /api/v1/products/product/?price=&in_stock=true&name=garden+&categ=3
+GET /api/v1/products/product/?price=&min_price=10&max_price=20&in_stock=&name=&categ=
+
+search
+GET /api/v1/products/product/?search=garden
+
+ordering
+GET /api/v1/products/product/?ordering=name
